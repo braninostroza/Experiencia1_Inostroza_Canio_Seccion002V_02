@@ -106,8 +106,8 @@
               <tr><td> {{r.nombre}}</td>
                 <td> {{r.correo}}</td>
                 <td> {{r.contraseña}}</td>
-                <td> <a href="{% url 'modi_registro' r.id %}" class="btn btn-info">Modificar</a>
-                      <a href="{% url 'eli_registro' r.id %}" class="btn btn-danger">Eliminar</a></td>
+                <td> <a href="{% url 'modi_registro' r.nombre %}" class="btn btn-info">Modificar</a>
+                      <a href="{% url 'eli_registro' r.nombre %}" class="btn btn-danger">Eliminar</a></td>
 
               </tr>
             {% endfor %}

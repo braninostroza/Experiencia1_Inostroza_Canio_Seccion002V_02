@@ -5,7 +5,7 @@ from django.db import models
 
 # Modelo para registro de usuarios
 class Registro(models.Model):
-    nombre = models.TextField(max_length=50, verbose_name='Nombre de usuario')
+    nombre = models.TextField(max_length=10, primary_key=True, verbose_name='Nombre de usuario')
     correo = models.EmailField(max_length=50, verbose_name= 'Correo')
     contraseña = models.TextField(max_length=50, verbose_name= 'Contraseña')
 

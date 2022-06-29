@@ -76,7 +76,7 @@ def modi_contacto(request, id):
     return render (request, 'core/modi_contacto.html', datos ) 
 
 def modi_registro(request, id): 
-    registro = Registro.objects.get(id=id)
+    registro = Registro.objects.get(nombre=id)
     datos = {
         'form': RegistroForm(instance=registro)
     }
@@ -93,6 +93,6 @@ def eli_contacto(request, id):
     return redirect ('listar_contacto')
 
 def eli_registro(request, id):
-    registro = Registro.objects.get(id=id)
+    registro = Registro.objects.get(nombre=id)
     registro.delete()
     return redirect ('listar_registro')          
