@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'core',
     'rest_framework',
     'rest_registro',
+    'rest_contacto',
+    'rest_framework.authtoken',
+
 ]
 
 MIDDLEWARE = [
